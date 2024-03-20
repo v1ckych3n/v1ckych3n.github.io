@@ -34,7 +34,7 @@ table {
 }
 
 input, textarea {
-  -webkit-user-select: auto;
+  --webkit-user-select: auto;
 }
 
 textarea {
