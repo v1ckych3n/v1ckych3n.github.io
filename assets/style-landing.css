@@ -1,21 +1,36 @@
 /* font styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+@font-face {
+    font-family: PPMori-Regular;
+    src: url(../assets/fonts/PPMori-Regular.otf);
+}
+
 
 :root {
     --font-size: 3rem;
+    --heading-font: PPMori-Regular;
+    --text-font: Roboto Mono;
+
+
     --primary-color: white;
-    --Secondary-color: black;
+    --secondary-color: black;
+
+    --outline-stroke: var(--primary-color) 1px solid;
     
     --gutter: calc(var(--font-size) * 1.618);
 }
 
 body {
-    font-family: sans-serif;
+    font-family: var(--text-font);
     font-size: var(--font-size);
 
     background-color: var(--secondary-color);
+    color: var(--primary-color);
 
     padding-bottom: calc(var(--gutter) * 3);
     padding-left: var(--gutter);
+    
     padding-right: var(--gutter);
     padding-top: calc(var(--gutter) * 3);
 
@@ -25,8 +40,9 @@ body {
 }
 
 h1 {
-    font-size: calc(var(--font-size) * 2);
-    color: blue;
+    font-family: var(--heading-font);
+    font-size: calc(var(--font-size) * 2.5);
+    text-transform: uppercase;
 }
 
 /* uses object-fit and aspect-ration together for images */
@@ -37,6 +53,21 @@ h1 {
 
 @media (min-width: 600px) {
     :root {
-        --font-size: 32px;
+        --font-size: 3rem;
+    }
+
+
+    .landing-page-portfolio {
+        display: flex;
+        flex-direction: row;
+        column-gap: 2rem;
+
+        width: 100%;
+    }
+
+    .landing-page-portfolio > li {
+        width: 100%;
+        border: var(--outline-stroke);
+        padding: 2rem;
     }
 }
