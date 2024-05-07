@@ -6,12 +6,15 @@
     src: url(../assets/fonts/PPMori-Regular.otf);
 }
 
+@font-face {
+    font-family: PP Neue Montreal;
+    src: url(../assets/fonts/)
+}
 
 :root {
     --font-size: 3rem;
     --heading-font: PPMori-Regular;
     --text-font: Roboto Mono;
-
 
     --primary-color: white;
     --secondary-color: black;
