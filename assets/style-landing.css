@@ -1,38 +1,43 @@
 /* font styles */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
-
 @font-face {
-    font-family: PPMori-Regular;
-    src: url(../assets/fonts/PPMori-Regular.otf);
+    font-family: PP Neue Montreal;
+    font-weight: 400;
+    src: url(../assets/fonts/PPNeueMontreal-Book.otf);
 }
 
 @font-face {
     font-family: PP Neue Montreal;
-    src: url(../assets/fonts/)
+    font-weight: 500;
+    src: url(../assets/fonts/PPNeueMontreal-Medium.otf);
+}
+
+@font-face {
+    font-family: PP Neue Montreal Italic;
+    src: url(../assets/fonts/PPNeueMontreal-Italic.otf);
 }
 
 :root {
     --font-size: 3rem;
-    --heading-font: PPMori-Regular;
-    --text-font: Roboto Mono;
+    --main-font: PP Neue Montreal;
+    --italic-font: PP Neue Montreal Italic;
 
-    --primary-color: white;
-    --secondary-color: black;
+    --blue: #0355ff;
+    --black: black;
+    --white: white;
 
-    --outline-stroke: var(--primary-color) 1px solid;
+    --outline-stroke: var(--blue) 1px solid;
     
-    --gutter: calc(var(--font-size) * 1.618);
+    --spacing: 2%;
 }
 
 body {
     font-family: var(--text-font);
     font-size: var(--font-size);
 
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
+    background-color: var(--white);
+    color: var(--blue);
 
-    padding-bottom: calc(var(--gutter) * 3);
-    padding-left: var(--gutter);
+    padding: var(--gap);
     
     padding-right: var(--gutter);
     padding-top: calc(var(--gutter) * 3);
@@ -48,29 +53,11 @@ h1 {
     text-transform: uppercase;
 }
 
-/* uses object-fit and aspect-ration together for images */
-
-/* DESKTOP MEDIA QUERY */
-/* DESKTOP MEDIA QUERY */
-/* DESKTOP MEDIA QUERY */
-
-@media (min-width: 600px) {
-    :root {
-        --font-size: 3rem;
-    }
-
-
-    .landing-page-portfolio {
-        display: flex;
-        flex-direction: row;
-        column-gap: 2rem;
-
-        width: 100%;
-    }
-
-    .landing-page-portfolio > li {
-        width: 100%;
-        border: var(--outline-stroke);
-        padding: 2rem;
-    }
+em {
+    font-family: var(--italic-font);
 }
+
+/* DESKTOP MEDIA QUERY */
+/* DESKTOP MEDIA QUERY */
+/* DESKTOP MEDIA QUERY */
+
