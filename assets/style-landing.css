@@ -50,12 +50,28 @@ em {
     font-family: var(--italic-font);
 }
 
+a {
+    font-family: var(--main-font);
+    color: var(--blue);
+    text-transform: capitalize;
+}
+
 nav {
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+nav > div {
     width: 75vw;
     
     display: flex; 
     flex-direction: row;
     justify-content: space-between;
+    align-content: center;
+    align-items: center;
 
     position: fixed;
     bottom: 10%;
@@ -80,6 +96,8 @@ nav {
 /* DESKTOP MEDIA QUERY */
 /* DESKTOP MEDIA QUERY */
 @media (min-width: 1080px) {
-
+    a:hover {
+        color: var(--black);
+    }
 }
 
