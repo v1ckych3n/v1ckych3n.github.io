@@ -43,6 +43,7 @@ body {
 h1 {
     font-family: var(--main-font);
     font-size: calc(var(--font-size) * 3);
+    font-weight: 500;
 }
 
 h2 {
@@ -123,11 +124,18 @@ footer {
 }
 
 /* class styles */
-.project-content {
+.project_content {
     display: flex;
     flex-direction: column;
     row-gap: var(--spacing);
 }
+
+.project_tags {
+    display: flex;
+    flex-direction: row;
+    column-gap: var(--spacing);
+}
+
 
 
 /* TABLET MEDIA QUERY */
