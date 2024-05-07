@@ -59,11 +59,27 @@ nav {
 
     position: fixed;
     bottom: 10%;
+    right: 0;
+    left: 0;
     
     outline: var(--outline);
 }
 
+
+
+/* TABLET MEDIA QUERY */
+/* TABLET MEDIA QUERY */
+/* TABLET MEDIA QUERY */
+@media (min-width: 768px) {
+    
+}
+
+
+
 /* DESKTOP MEDIA QUERY */
 /* DESKTOP MEDIA QUERY */
 /* DESKTOP MEDIA QUERY */
+@media (min-width: 1080px) {
+
+}
 
