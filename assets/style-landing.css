@@ -29,6 +29,7 @@
     --outline: var(--blue) 1px solid;
     
     --spacing: 2%;
+    --gap: 1rem;
 }
 
 body {
@@ -101,10 +102,10 @@ main {
 main > ol {
     display: grid; 
     grid-template-columns: 1fr 1fr;
-    column-gap: var(--spacing);
+    column-gap: var(--gap);
     /* figure out why the rows are not working */
     grid-template-rows: 1fr 1fr;
-    row-gap: var(--spacing);
+    row-gap: var(--gap);
 
     outline: var(--outline);
     padding: var(--spacing);
@@ -128,22 +129,27 @@ footer {
 .project_content {
     display: flex;
     flex-direction: column;
-    row-gap: var(--spacing);
+    row-gap: var(--gap);
 }
 
 .project_tags {
     display: flex;
     flex-direction: row;
-    column-gap: var(--spacing);
+    column-gap: var(--gap);
 }
 
 .project_tags > li {
+    font-size: calc(var(--font-size) * .75);
+    font-weight: 500;
+    
     background-color: var(--light-grey);
     color: var(--black);
-    padding-top: var(--spacing);
-    padding-bottom: var(--spacing);
+
+    padding-top: calc(var(--spacing) * .75);
+    padding-bottom: calc(var(--spacing) * .75);
     padding-left: calc(var(--spacing) * 2);
     padding-right: calc(var(--spacing) * 2);
+    
     border-radius: 1000px;
 }
 
