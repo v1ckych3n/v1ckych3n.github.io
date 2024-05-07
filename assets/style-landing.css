@@ -45,8 +45,17 @@ h1 {
     font-size: calc(var(--font-size) * 3);
 }
 
+h2 {
+    font-family: var(--main-font);
+    font-weight: 500;
+}
+
 em {
     font-family: var(--italic-font);
+}
+
+strong {
+    font-weight: 500;
 }
 
 p {
@@ -79,6 +88,7 @@ nav {
     
     outline: var(--outline);
     text-transform: uppercase;
+    font-weight: 500;
 }
 
 main {
