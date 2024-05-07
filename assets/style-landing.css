@@ -24,7 +24,7 @@
     --blue: #0355ff;
     --black: black;
     --white: white;
-    --light-grey: lightgrey;
+    --light-grey: #e0e0e0;
 
     --outline: var(--blue) 1px solid;
     
