@@ -1,4 +1,6 @@
 /* font styles */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 @font-face {
     font-family: PP Neue Montreal;
     font-weight: 400;
@@ -16,9 +18,16 @@
     src: url(../assets/fonts/PPNeueMontreal-Italic.otf);
 }
 
+.ibm-plex-mono-medium {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+}
+
 :root {
     --font-size: 16px;
     --main-font: PP Neue Montreal;
+    --body-font: IBM Plex Mono;
     --italic-font: PP Neue Montreal Italic;
 
     --blue: #0355ff;
@@ -33,7 +42,6 @@
 }
 
 body {
-    font-family: var(--text-font);
     font-size: var(--font-size);
 
     background-color: var(--white);
@@ -50,7 +58,6 @@ h1 {
 
 h2 {
     font-family: var(--main-font);
-    font-weight: 500;
     font-size: calc(var(--font-size) * 1.5);
 }
 
@@ -68,7 +75,6 @@ p {
 }
 
 a {
-    font-family: var(--main-font);
     color: var(--blue);
 }
 
@@ -139,6 +145,7 @@ footer {
 }
 
 .project_tags > li {
+    font-family: var(--body-font);
     font-size: calc(var(--font-size) * .75);
     font-weight: 500;
     
