@@ -25,7 +25,7 @@
     --black: black;
     --white: white;
 
-    --outline-stroke: var(--blue) 1px solid;
+    --outline: var(--blue) 1px solid;
     
     --spacing: 2%;
 }
@@ -38,23 +38,25 @@ body {
     color: var(--blue);
 
     padding: var(--gap);
-    
-    padding-right: var(--gutter);
-    padding-top: calc(var(--gutter) * 3);
-
-    display: flex;
-    flex-direction: column;
-    row-gap: var(--gutter);
+    outline: var(--outline);
 }
 
 h1 {
-    font-family: var(--heading-font);
-    font-size: calc(var(--font-size) * 2.5);
-    text-transform: uppercase;
+    font-family: var(--main-font);
 }
 
 em {
     font-family: var(--italic-font);
+}
+
+nav {
+    width: 75vw;
+    
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    
+    outline: var(--outline);
 }
 
 /* DESKTOP MEDIA QUERY */
