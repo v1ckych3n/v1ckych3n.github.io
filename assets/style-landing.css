@@ -129,13 +129,13 @@ footer {
 .project_content {
     display: flex;
     flex-direction: column;
-    row-gap: var(--gap);
+    row-gap: calc(var(--gap) * .5);
 }
 
 .project_tags {
     display: flex;
     flex-direction: row;
-    column-gap: var(--gap);
+    column-gap: calc(var(--gap) * .5);
 }
 
 .project_tags > li {
