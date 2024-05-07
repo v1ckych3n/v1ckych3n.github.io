@@ -37,7 +37,7 @@ body {
     background-color: var(--white);
     color: var(--blue);
 
-    padding: var(--gap);
+    padding: var(--spacing);
     outline: var(--outline);
 }
 
@@ -61,6 +61,7 @@ nav {
     height: 3rem;
 
     padding: var(--spacing);
+    margin: auto;
     
     display: flex; 
     flex-direction: row;
@@ -74,6 +75,23 @@ nav {
     left: 0;
     
     outline: var(--outline);
+}
+
+main > ol {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+
+    outline: var(--outline);
+    padding: var(--spacing);
+}
+
+main > ol > li {
+    outline: var(--outline);
+}
+
+footer {
+    background-color: var(--blue);
+    color: var(--color);
 }
 
 /* class styles */
