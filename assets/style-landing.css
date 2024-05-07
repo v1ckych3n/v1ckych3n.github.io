@@ -24,6 +24,7 @@
     --blue: #0355ff;
     --black: black;
     --white: white;
+    --light-grey: lightgrey;
 
     --outline: var(--blue) 1px solid;
     
@@ -136,6 +137,10 @@ footer {
     column-gap: var(--spacing);
 }
 
+.project_tags > li {
+    background-color: var(--light-grey);
+    color: var(--white);
+}
 
 
 /* TABLET MEDIA QUERY */
