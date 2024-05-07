@@ -89,6 +89,8 @@ main > ol {
     display: grid; 
     grid-template-columns: 1fr 1fr;
     column-gap: var(--spacing);
+    /* figure out why the rows are not working */
+    grid-template-rows: 1fr 1fr;
     row-gap: var(--spacing);
 
     outline: var(--outline);
