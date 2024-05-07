@@ -57,6 +57,9 @@ a {
 }
 
 nav {
+    width: 75vw;
+    height: 3rem;
+    
     display: flex; 
     flex-direction: row;
     justify-content: center;
@@ -65,8 +68,6 @@ nav {
 }
 
 nav > div {
-    width: 75vw;
-    
     display: flex; 
     flex-direction: row;
     justify-content: space-between;
@@ -80,6 +81,8 @@ nav > div {
     
     outline: var(--outline);
 }
+
+/* class styles */
 
 
 
