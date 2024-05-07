@@ -37,7 +37,6 @@ body {
     background-color: var(--white);
     color: var(--blue);
 
-    padding: var(--spacing);
     outline: var(--outline);
 }
 
@@ -58,7 +57,6 @@ p {
 a {
     font-family: var(--main-font);
     color: var(--blue);
-    text-transform: uppercase;
 }
 
 nav {
@@ -80,11 +78,18 @@ nav {
     left: 0;
     
     outline: var(--outline);
+    text-transform: uppercase;
+}
+
+main {
+    padding: var(--spacing);
 }
 
 main > ol {
     display: grid; 
     grid-template-columns: 1fr 1fr;
+    column-gap: var(--spacing);
+    row-gap: var(--spacing);
 
     outline: var(--outline);
     padding: var(--spacing);
@@ -98,7 +103,7 @@ main > ol > li {
 
 footer {
     background-color: var(--blue);
-    color: var(--color);
+    color: var(--white);
     padding: 0;
 }
 
