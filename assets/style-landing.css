@@ -17,7 +17,7 @@
 }
 
 :root {
-    --font-size: 3rem;
+    --font-size: 16px;
     --main-font: PP Neue Montreal;
     --italic-font: PP Neue Montreal Italic;
 
@@ -43,6 +43,7 @@ body {
 
 h1 {
     font-family: var(--main-font);
+    font-size: calc(var(--font-size) * 3);
 }
 
 em {
@@ -55,6 +56,9 @@ nav {
     display: flex; 
     flex-direction: row;
     justify-content: space-between;
+
+    position: fixed;
+    bottom: 10%;
     
     outline: var(--outline);
 }
