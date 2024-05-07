@@ -139,7 +139,12 @@ footer {
 
 .project_tags > li {
     background-color: var(--light-grey);
-    color: var(--white);
+    color: var(--black);
+    padding-top: var(--spacing);
+    padding-bottom: var(--spacing);
+    padding-left: calc(var(--spacing) * 2);
+    padding-right: calc(var(--spacing) * 2);
+    border-radius: 1000px;
 }
 
 
