@@ -58,6 +58,24 @@ header {
     padding-right: var(--spacing);
     padding-top: 10%;
     padding-bottom: var(--spacing);
+
+    display: flex; 
+    flex-direction: column;
+    row-gap: var(--gap);
+}
+
+header > p {
+    width: fit-content;
+    
+    outline: var(--outline);
+    border-radius: 1000px;
+    background-color: var(--blue);
+    color: var(--white);
+
+    padding-left: calc(var(--gap) * 1.25);
+    padding-right: calc(var(--gap) * 1.25);
+    padding-top: calc(var(--gap) * .25);
+    padding-bottom: calc(var(--gap) * .25);
 }
 
 h1 {
@@ -86,6 +104,7 @@ p {
 
 a {
     color: var(--blue);
+    cursor: pointer;
 }
 
 nav {
@@ -159,7 +178,7 @@ footer {
     text-transform: uppercase;
     
     background-color: var(--light-grey);
-    color: var(--black);
+    color: var(--blue);
 
     padding-top: calc(var(--spacing) * .25);
     padding-bottom: calc(var(--spacing) * .25);
@@ -213,6 +232,12 @@ footer {
     a:hover {
         color: var(--black);
         transition: var(--hover-effect);
+    }
+
+    .logo:hover {
+        rotate: 90deg;
+        transition: var(--hover-effect);
+        cursor: pointer;
     }
 }
 
