@@ -118,9 +118,9 @@ main {
 main > ol {
     display: grid; 
     grid-template-columns: 1fr 1fr;
-    column-gap: var(--gap);
+    column-gap: calc(var(--gap) * 2);
     grid-template-rows: 1fr 1fr;
-    row-gap: var(--gap);
+    row-gap: calc(var(--gap) * 2);
 }
 
 main > ol > li {
