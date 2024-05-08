@@ -151,9 +151,9 @@ main > ol > li {
 footer {
     background-color: var(--blue);
     color: var(--white);
-    padding: 0;
+    padding: var(--spacing);
 
-    height: 7rem;
+    height: 20rem;
 }
 
 /* class styles */
@@ -214,6 +214,33 @@ footer {
     height: 2rem;
 }
 
+.footer_content {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--gap);
+}
+
+.footer_content > p:first-child {
+    font-size: calc(var(--font-size) * 1.5);
+    
+    width: fit-content;
+    padding-top: calc(var(--spacing) * .25);
+    padding-bottom: calc(var(--spacing) * .25);
+    padding-left: calc(var(--spacing) * 1.5);
+    padding-right: calc(var(--spacing) * 1.5);    
+
+    outline: var(--white) 1px solid;
+    border-radius: 1000px;
+}
+
+.footer_content > p:nth-child(2) {
+    font-size: calc(var(--font-size) * 3);
+    font-weight: 500;
+}
+
+.footer_links {
+    
+}
 
 
 /* TABLET MEDIA QUERY */
