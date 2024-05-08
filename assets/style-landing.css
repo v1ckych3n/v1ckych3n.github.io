@@ -334,8 +334,17 @@ footer {
         align-items: center;
     }
 
+    .footer_content {
+        align-items: flex-start;
+    }
+
     .footer_content > p:first-child {
         font-size: calc(var(--font-size) * 1.5);
+
+        padding-top: calc(var(--spacing) * 1.5);
+        padding-bottom: calc(var(--spacing) * 1.5);
+        padding-left: calc(var(--spacing) * 3);
+        padding-right: calc(var(--spacing) * 3);
     }
 
     .footer_content > p:nth-child(2) {
