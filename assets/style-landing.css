@@ -345,6 +345,8 @@ footer {
         column-gap: var(--gap);
         grid-template-rows: 1fr 1fr;
         row-gap: var(--gap);
+
+        width: auto;
     }
 
     .footer_links > a:hover {
