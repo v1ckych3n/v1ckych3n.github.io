@@ -205,12 +205,9 @@ footer {
     font-weight: 500;
     font-family: var(--body-font);
 
-    display: flex;
-    flex-direction: row;
-    column-gap: calc(var(--gap) * 2);
-    justify-content: space-between;
-    align-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 .logo {
@@ -297,6 +294,15 @@ footer {
         rotate: 90deg;
         transition: var(--hover-effect);
         cursor: pointer;
+    }
+
+    .navbar_links {
+        display: flex;
+        flex-direction: row;
+        column-gap: calc(var(--gap) * 2);
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
     }
 
     .footer_links > a:hover {
