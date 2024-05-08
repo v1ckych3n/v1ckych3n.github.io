@@ -80,9 +80,9 @@ a {
 
 nav {
     width: 75vw;
-    height: 3rem;
+    height: 4rem;
 
-    padding: var(--spacing);
+    padding: calc(var(--spacing) * .5);
     margin: auto;
     
     display: flex; 
@@ -92,13 +92,11 @@ nav {
     align-items: center;
 
     position: fixed;
-    bottom: 10%;
+    bottom: 5%;
     right: 0;
     left: 0;
     
     outline: var(--outline);
-    text-transform: uppercase;
-    font-weight: 500;
 }
 
 main {
@@ -109,7 +107,6 @@ main > ol {
     display: grid; 
     grid-template-columns: 1fr 1fr;
     column-gap: var(--gap);
-    /* figure out why the rows are not working */
     grid-template-rows: 1fr 1fr;
     row-gap: var(--gap);
 
@@ -158,6 +155,24 @@ footer {
     padding-right: calc(var(--spacing) * 2);
     
     border-radius: 1000px;
+}
+
+.navbar_links {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: var(--body-font);
+
+    display: flex;
+    flex-direction: row;
+    column-gap: calc(var(--gap) * 2);
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 2rem;
+    height: 2rem;
 }
 
 
