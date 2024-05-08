@@ -132,6 +132,9 @@ footer {
     color: var(--white);
     padding: var(--spacing);
 
+    padding-top: calc(var(--gap) * 3);
+    padding-bottom: calc(var(--gap) * 3);
+
     height: fit-content;
 
     display: flex;
