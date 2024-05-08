@@ -165,9 +165,9 @@ footer {
 .project_content {
     display: flex;
     flex-direction: column;
-    row-gap: calc(var(--gap) * .5);
+    row-gap: var(--gap);
 
-    padding: var(--spacing);
+    padding: var(--gap);
 }
 
 .project_tags {
