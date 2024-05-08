@@ -36,6 +36,7 @@
     --light-grey: #e0e0e0;
 
     --outline: var(--blue) 1px solid;
+    --hover-effect: ease-in-out 250ms;
     
     --spacing: 2%;
     --gap: 1rem;
@@ -50,9 +51,16 @@ body {
     outline: var(--outline);
 }
 
+header {
+    padding-left: var(--spacing);
+    padding-right: var(--spacing);
+    padding-top: 10%;
+    padding-bottom: var(--spacing);
+}
+
 h1 {
     font-family: var(--main-font);
-    font-size: calc(var(--font-size) * 3);
+    font-size: calc(var(--font-size) * 4);
     font-weight: 500;
 }
 
@@ -145,14 +153,15 @@ footer {
     font-family: var(--body-font);
     font-size: calc(var(--font-size) * .75);
     font-weight: 500;
+    text-transform: uppercase;
     
     background-color: var(--light-grey);
     color: var(--black);
 
-    padding-top: calc(var(--spacing) * .75);
-    padding-bottom: calc(var(--spacing) * .75);
-    padding-left: calc(var(--spacing) * 2);
-    padding-right: calc(var(--spacing) * 2);
+    padding-top: calc(var(--spacing) * .25);
+    padding-bottom: calc(var(--spacing) * .25);
+    padding-left: calc(var(--spacing) * 1.5);
+    padding-right: calc(var(--spacing) * 1.5);
     
     border-radius: 1000px;
 }
@@ -191,6 +200,7 @@ footer {
 @media (min-width: 1080px) {
     a:hover {
         color: var(--black);
+        transition: var(--hover-effect);
     }
 }
 
