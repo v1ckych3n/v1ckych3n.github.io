@@ -45,6 +45,8 @@
 body {
     font-size: var(--font-size);
 
+    margin: var(--spacing);
+
     background-color: var(--white);
     color: var(--blue);
 
@@ -92,6 +94,7 @@ nav {
 
     padding: calc(var(--spacing) * .5);
     margin: auto;
+    background-color: var(--white);
     
     display: flex; 
     flex-direction: row;
@@ -103,6 +106,7 @@ nav {
     bottom: 5%;
     right: 0;
     left: 0;
+    z-index: 1000;
     
     outline: var(--outline);
 }
@@ -134,6 +138,8 @@ footer {
     background-color: var(--blue);
     color: var(--white);
     padding: 0;
+
+    height: 7rem;
 }
 
 /* class styles */
